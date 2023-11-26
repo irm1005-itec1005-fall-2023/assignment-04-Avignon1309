@@ -3,7 +3,7 @@
 
 <head>
   <!-- Set the page title -->
-  <title>Assignment 04 - Finishing a Todo List App</title>
+  <title>Do or do not, there's no TRY</title>
 
   <!-- Set the charset we're using to UTF-8 -->
   <meta charset="utf-8" />
@@ -21,9 +21,32 @@
   <link rel="stylesheet" href="./style.css" />
 
   <!-- Set the Favicon  -->
-  <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
+  <link rel="icon" href="https://eaw-team.github.io/equestria_dev/gfx/interface/decisions/sombra_book.png" type="image/svg+xml" />
 </head>
 <body>
+
+
+  <main>
+
+    <button id="triggerButton" onclick="showBox()" class = "custom">Do or DO NOT</button>
+    <div id="hiddenBox" class="hidden">
+      <h1 class = "titleone">Your to-do, Your List</h1>
+      <form id="itemforma">
+        <input type = "text" id = "textInput" name = "textInput" placeholder = "What should be done?" class = "inputbox" required/>
+        <button id = "submitButton" type = "submit" class = "customizebutton" >Submit</button>
+        
+      </form>
+
+    <section>
+
+      <ul class = "results" id = "itemresults"></ul>
+      <p id = detailed class = "exPorted"></p>
+
+    </section>
+
+    </div>
+  </main>
+ 
 
   <!--
 
@@ -40,9 +63,7 @@
 
   -->
 
-  <main>
-    <div id="app"></div>
-  </main>
+
 
   <!-- Add JavaScript File -->
   <script src="./script.js"></script>
